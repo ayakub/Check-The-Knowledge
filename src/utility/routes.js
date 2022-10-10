@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blog from "../componants/Blog";
+import ErrorPage from "../componants/ErrorPage";
 import Home from "../componants/Home";
 import Main from "../componants/Main";
 import Statics from "../componants/Statics";
@@ -12,5 +13,6 @@ export const router = createBrowserRouter([
             { path: '/statics', element: <Statics></Statics> },
             { path: '/blog', element: <Blog></Blog> },
         ]
-    }
+    },
+    { path: '*', element: <ErrorPage></ErrorPage> }
 ]);
