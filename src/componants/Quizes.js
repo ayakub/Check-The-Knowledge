@@ -4,18 +4,20 @@ import QuizQuestions from './QuizQuestions';
 
 const Quizes = () => {
     const quizOption = useLoaderData();
-    const { name, questions, logo } = quizOption.data;
+    const { name, questions, } = quizOption.data;
     return (
         <div className='mt-10'>
-            <div><img src={logo} alt="" />
+            <div>
                 <h2 className='text-2xl'>{name}</h2>
             </div>
-            {
-                questions.map(newQues => <QuizQuestions
-                    key={newQues.id}
-                    quizQues={newQues}
-                ></QuizQuestions>)
-            }
+            <div>
+                {
+                    questions.map(newQues => <QuizQuestions
+                        key={newQues.id}
+                        quizQues={newQues}
+                    ></QuizQuestions>)
+                }
+            </div>
             {/* {
                 questions.map(newQues => console.log(newQues))
             } */}
