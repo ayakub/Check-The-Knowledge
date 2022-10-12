@@ -8,8 +8,8 @@ const ErrorPage = () => {
                 <h1>404</h1>
                 <h2>Page not found</h2>
             </div>
-            <div>
-                <Link to='/'><button>Back Home</button></Link>
+            <div className='mt-10 '>
+                <Link to='/'><button className='bg-orange-500 text-white px-5 py-3 text-2xl font-semibold rounded-md'>Back Home</button></Link>
             </div>
         </div>
     );
