@@ -39,9 +39,6 @@ const QuizQuestions = ({ quizQues }) => {
                         handleQuestions={handleQuestions}
                     ></QuizOption>)
                 }
-                {
-                    options.map(option => console.log(option))
-                }
             </div>
         </div >
     );

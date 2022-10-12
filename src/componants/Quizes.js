@@ -8,7 +8,7 @@ const Quizes = () => {
     return (
         <div className='mt-10'>
             <div className='text-green-500  font-bold mb-10'>
-                <h2 className='text-5xl'>{name}</h2>
+                <h2 className='text-4xl'>Quiz of {name}</h2>
             </div>
             <div className='text-green-500  bg-slate-200 rounded-md'>
                 {
