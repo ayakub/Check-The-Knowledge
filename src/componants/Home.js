@@ -11,7 +11,7 @@ const Home = () => {
                     <img className='w-/4 rounded-md' src={pic} alt="" />
                 </div>
                 <div className='text-gray-300 w-50 ml-3'>
-                    <h1 className='text-2xl'> <p>quiz is a form of game or mind sport in which players attempt to answer questions correctly about a certain or variety of </p> subjects. Quizzes can be used as a brief assessment in education and similar fields to measure growth in knowledge, abilities, or skills</h1>
+                    <h1 className='text-2xl'> <p className='md:none lg:block'>quiz is a form of game or mind sport in which players attempt to answer questions correctly about a certain or variety of </p> subjects. Quizzes can be used as a brief assessment in education and similar fields to measure growth in knowledge, abilities, or skills</h1>
                 </div>
             </div>
             <div className=" bg-green-200 mt-5 ">
