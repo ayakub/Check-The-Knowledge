@@ -1,14 +1,15 @@
 import React from 'react';
+import { ToastContainer } from 'react-toastify';
 
-const QuizOption = ({ option }) => {
+const QuizOption = ({ option, handleQuestions }) => {
     return (
-        <div >
-            <input
-                type="radio"
-                name="quiz"
-                value={option}
-                className=" checked:bg-red-500 cursor-pointer mr-2 mt-1 radio"
-            />{option}
+
+        <div>
+            <button onClick={() => handleQuestions(option)}>{option}
+            </button>
+            <ToastContainer />
+            {/* Same as */}
+            <ToastContainer />
         </div>
     );
 };

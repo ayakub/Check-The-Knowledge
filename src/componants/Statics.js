@@ -6,9 +6,9 @@ const Statics = () => {
     const datas = useLoaderData();
     const data = datas.data;
     return (
-        <div className='flex justify-center bg-black mt-20 p-10 ml-20 mr-10 rounded-md'>
+        <div className='flex justify-center bg-black mt-20 md:p-10 md:ml-20 md:mr-10 rounded-md'>
             <div className='content-center '>
-                <LineChart width={400} height={350} data={data}>
+                <LineChart width={350} height={350} data={data}>
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip></Tooltip>
