@@ -7,10 +7,10 @@ const Quizes = () => {
     const { name, questions, } = quizOption.data;
     return (
         <div className='mt-10'>
-            <div>
-                <h2 className='text-2xl'>{name}</h2>
+            <div className='text-green-500  font-bold mb-10'>
+                <h2 className='text-5xl'>{name}</h2>
             </div>
-            <div>
+            <div className='text-green-500  bg-slate-200 rounded-md'>
                 {
                     questions.map(newQues => <QuizQuestions
                         key={newQues.id}
@@ -22,7 +22,7 @@ const Quizes = () => {
                 questions.map(newQues => console.log(newQues))
             } */}
 
-        </div>
+        </div >
     );
 };
 export default Quizes;

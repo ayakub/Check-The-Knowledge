@@ -15,7 +15,7 @@ const QuizQuestions = ({ quizQues }) => {
 
     const handleQuestions = option => {
         if (option === correctAnswer) {
-            toast.success("Correct!", { autoClose: 500, position: "top-center", theme: "colored" })
+            toast.success("Correct!", { autoClose: 500, position: "top-center", theme: "colored", })
         } else {
             toast.error("Wrong", { autoClose: 500, position: "top-center", theme: "colored" })
         }
@@ -23,8 +23,8 @@ const QuizQuestions = ({ quizQues }) => {
     }
     return (
         <div>
-            <div> <h3 className='text-3xl'>{question}</h3></div>
-            <div className=' bg-slate-400'>
+            <div className=' mb-7'> <h3 className='text-3xl'>{question}</h3></div>
+            <div className='bg-teal-100'>
                 {
                     options.map(option => <QuizOption
                         key={option.id}
@@ -33,7 +33,7 @@ const QuizQuestions = ({ quizQues }) => {
                     ></QuizOption>)
                 }
             </div>
-        </div>
+        </div >
     );
 };
 
